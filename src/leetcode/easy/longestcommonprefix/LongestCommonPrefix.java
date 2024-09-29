@@ -7,5 +7,6 @@ public class LongestCommonPrefix {
         String response = solution.longestCommonPrefix(new String[]{"cir","car"});
 
         System.out.println(response);
+
     }
 }
