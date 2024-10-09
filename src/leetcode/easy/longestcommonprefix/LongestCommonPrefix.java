@@ -6,7 +6,7 @@ public class LongestCommonPrefix {
 //        // Change the value here to test different cases.
 //        String response = solution.longestCommonPrefix(new String[]{"cir","car"});
 
-        Solution_Attempt2  solutionAttempt2 = new Solution_Attempt2();
+        Solution2 solutionAttempt2 = new Solution2();
         String response = solutionAttempt2.longestCommonPrefix(new String[]{"ab", "a"});
 
         System.out.println(response);
