@@ -9,17 +9,16 @@ public class Solution {
         s = s.toLowerCase();
 
         int leftPointer = 0;
-        int rightPointer = s.length()-1;
-        String allowedCharacters = "abcdefghijklmnopqrstuvwxyz0123456789";
+        int rightPointer = s.length() - 1;
 
         while (leftPointer < rightPointer) {
-            if (allowedCharacters.contains(Character.toString(s.charAt(leftPointer))) && allowedCharacters.contains(Character.toString(s.charAt(rightPointer)))) {
+            if (Character.isLetterOrDigit(s.charAt(leftPointer)) && Character.isLetterOrDigit(s.charAt(rightPointer))) {
                 if (s.charAt(leftPointer) != s.charAt(rightPointer)) {
                     return false;
                 }
                 leftPointer++;
                 rightPointer--;
-            } else if (!allowedCharacters.contains(Character.toString(s.charAt(leftPointer)))) {
+            } else if (!Character.isLetterOrDigit(s.charAt(leftPointer))) {
                 leftPointer++;
             } else {
                 rightPointer--;
